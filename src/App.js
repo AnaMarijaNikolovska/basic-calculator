@@ -3,7 +3,7 @@ import './App.css';
 import Calculator from './Calculator';
 import Header from './Header';
 import { Navbar } from 'react-bootstrap';
-import Photo from '../src/assets/1177136244533288258.jpg'
+import Photo from './1177136244533288258.jpg'
 
 function App() {
   const bgStyle = {
