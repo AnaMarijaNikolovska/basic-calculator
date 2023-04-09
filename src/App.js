@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Calculator from './Calculator';
+import Header from './Header';
+import { Navbar } from 'react-bootstrap';
+import Photo from '../src/assets/1177136244533288258.jpg'
 
 function App() {
+  const bgStyle = {
+    backgroundImage: `url(${Photo})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    height: '100vh'
+
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={bgStyle}>
+      <Header/>
+      <Calculator/>
     </div>
   );
 }
